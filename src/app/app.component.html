@@ -1,0 +1,19 @@
+<router-outlet />
+
+<p>To reproduce the issue:</p>
+<ol>
+  <li>
+    Open the deveoplers console so that the .css.map files would be requested by
+    the browser.
+  </li>
+  <li>Click "About" to navigate to the About page.</li>
+  <li>Reload the page.</li>
+  <li>Click "Home" to navigate to the Home page.</li>
+  <li>
+    An error will be logged in the server:
+    <b>
+      ERROR RuntimeError: NG04002: Cannot match any routes. URL Segment:
+      'about/home.component.css.map'</b
+    >
+  </li>
+</ol>
